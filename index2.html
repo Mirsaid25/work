@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style2.css">
+    <script src='https://cdn.plot.ly/plotly-2.14.0.min.js'></script>
+</head>
+<body>
+    <div class="enter"></div>
+    <div class="block">
+        <div class="block-left">
+            <div class="block-left-top">
+                <img src="./img/logo-container.svg" alt="">
+            <div class="block-left1">
+                <div class="left1-left">
+                    <h1>Acme Inc</h1>
+                    <span>Your tier: Premium</span>
+                </div>
+                <div class="left1-right">
+                    <img src="./img/left1-right.svg" alt="">
+                </div>
+            </div>
+            <hr>
+            <ul>
+                <li class="dashboard">
+                    <img src="./img/li_1.svg" alt="">
+                    <p>Dashboard</p>
+                </li>
+                <li class="customers">
+                    <img src="./img/li_2.svg" alt="">
+                    <p>Customers</p>
+                </li>
+                <li class="eror">
+                    <img src="./img/li_3.svg" alt="">
+                    <p>Products</p>
+                </li>
+                <li class="eror">
+                    <img src="./img/li_4.svg" alt="">
+                    <p>Account</p>
+                </li>
+                <li class="eror">
+                    <img src="./img/li_5.svg" alt="">
+                    <p>Settings</p>
+                </li>
+                <li class="eror" >
+                    <img src="./img/li_6.svg" alt="">
+                    <p>Login</p>
+                </li>
+                <li class="add_custemers">
+                    <img src="./img/li_7.svg" alt="">
+                    <p class="register">Register</p>
+                </li>
+                <li class="eror">
+                    <img src="./img/li_8.svg" alt="">
+                    <p>Error</p>
+                </li>
+            </ul>
+            </div>
+            <hr>
+            <div class="block-left-bottom">
+                <h3>Need more features?</h3>
+                <p>Check out our Pro solution template.</p>
+                <img src="./img/left-bottom.svg" height="50px" alt="">
+                <button>Pro Live Preview</button>
+            </div>
+        </div>
+        <div class="block-right">
+            <header>
+                <div class="header-left">
+                    <img src="./img/search.svg" alt="">
+                </div>
+                <div class="header-right">
+                    <img src="./img/li_2.svg" alt="">
+                    <img src="./img/bell.svg" alt="">
+                    <img src="./img/avatar.png" height="40" width="40" alt="">
+                </div>
+            </header>
+            <div class="contener">
+                <div class="block1">
+                    <div class="block1_grid">
+                        <div class="block1_grid-top">
+                            <div class="block1_grid-top_left">
+                                <span>BUDGET</span>
+                                <h1>$24k</h1>
+                            </div>
+                            <div class="block1_grid-top_right">
+                                <img src="./img/grid_1.svg" alt="">
+                            </div>
+                        </div>
+                        <span>Since last month</span>
+                    </div>
+                    <div class="block1_grid">
+                        <div class="block1_grid-top">
+                            <div class="block1_grid-top_left">
+                                <span>TOTAL CUSTOMERS</span>
+                                <h1>1,6k</h1>
+                            </div>
+                            <div class="block1_grid-top_right">
+                                <img src="./img/grid_2.svg" alt="">
+                            </div>
+                        </div>
+                        <span>Since last month</span>
+                    </div>
+                    <div class="block1_grid">
+                        <div class="block1_grid-top">
+                            <div class="block1_grid-top_left">
+                                <span>TASKS PROGRESS</span>
+                                <h1>75.5%</h1>
+                            </div>
+                            <div class="block1_grid-top_right">
+                                <img src="./img/grid_3.svg" alt="">
+                            </div>
+                        </div>
+                        <span>Since last month</span>
+                    </div>
+                    <div class="block1_grid">
+                        <div class="block1_grid-top">
+                            <div class="block1_grid-top_left">
+                                <span>TOTAL PROFIT</span>
+                                <h1>$23k</h1>
+                            </div>
+                            <div class="block1_grid-top_right">
+                                <img src="./img/grid_4.svg" alt="">
+                            </div>
+                        </div>
+                        <span>Since last month</span>
+                    </div>
+                </div>
+            </div>
+            <div class="f1">
+                <div id='myDiv' class="w1">
+                    <!-- Plotly chart will be drawn inside this DIV -->
+                </div>
+                <div class="w2">
+                    <canvas id="myChart"></canvas>
+                  </div>                  
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const myChart = new Chart(
+          document.getElementById('myChart'),
+          config
+        );
+    </script>
+       
+</body>
+</html>
